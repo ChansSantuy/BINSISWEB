@@ -1,0 +1,493 @@
+
+// From heroData.ts
+export const heroData = {
+  bgDesktop: {
+    src: "/assets/bg/HeroBg.png",
+    alt: "Background"
+  },
+  bgMobile: {
+    src: "/assets/bg/bg-mobile.png",
+    alt: "Background"
+  },
+  titleSmall: "Informasi Pendaftaran Siswa Baru",
+  titleLarge: "SMKS BINA\nSISWA 2\nCILILIN",
+  cta: {
+    text: "INFORMASI PENDAFTARAN",
+    arrow: {
+      src: "/assets/Icon/misc/right-arrow.png",
+      alt: "Arrow Icon"
+    }
+  },
+  stats: [
+    {
+      id: "pelajar",
+      icon: {
+        src: "/assets/Icon/misc/murid_icon.gif",
+        alt: "Pelajar"
+      },
+      number: 422,
+      label: "PELAJAR"
+    },
+    {
+      id: "pengajar",
+      icon: {
+        src: "/assets/Icon/misc/guru_icon.gif",
+        alt: "Pengajar"
+      },
+      number: 20,
+      label: "PENGAJAR"
+    },
+    {
+      id: "ruangan",
+      icon: {
+        src: "/assets/Icon/misc/class_icon.gif",
+        alt: "Ruangan"
+      },
+      number: 24,
+      label: "RUANGAN"
+    }
+  ]
+};
+
+// From aboutData.ts
+export const aboutData = {
+  heroImage: "/assets/bg/Luar-2.webp",
+  subtitle: "Salam hangat dan selamat datang di website",
+  title: "SMKS Bina Siswa 2 Cililin",
+  intro:
+    `Selamat datang di platform digital resmi SMK Bina Siswa 2 Cililin!
+Di sini anda dapat menemukan, program keahlian yang ditawarkan, kegiatan siswa, hingga berbagai prestasi dan fasilitas yang mendukung proses belajar mengajar.`,
+  more:
+    `Kami berkomitmen menciptakan lingkungan pendidikan yang berkualitas,
+membekali siswa dengan keterampilan, pengetahuan, dan karakter unggul untuk siap menghadapi dunia kerja maupun melanjutkan pendidikan ke jenjang yang lebih tinggi.`,
+  visi: {
+    icon: "/assets/Icon/misc/binoculars.png",
+    title: "Visi",
+    text:
+      "Menjadi salah satu SMK yang unggul dalam bidang olahraga, ilmu, dan kesenian serta dapat menghasilkan peserta didik profesional dan mampu memanfaatkan peluang kerja di era globalisasi."
+  },
+  misi: {
+    icon: "/assets/Icon/misc/mission-statement.png",
+    title: "Misi",
+    items: [
+      "Mempersiapkan lulusan yang berkompeten dan mempunyai keahlian.",
+      "Mempersiapkan lulusan yang mampu bekerja di dunia usaha dan industri.",
+      "Mempersiapkan lulusan yang menguasai IPTEX dan IMTAQ."
+    ]
+  }
+};
+
+
+
+// From ekskulData.ts
+export type EkskulItem = {
+  icon: string; // fontawesome class suffix, e.g. "fa-laptop-code"
+  label: string;
+  tagline: string;
+  img: string;
+  deskripsi: string;
+  id?: string;
+};
+
+export const ekskulIcons: EkskulItem[] = [
+ {
+  icon: "fa-laptop-code",
+  label: "HISS TKJ",
+  tagline: "Teknologi untuk masa depan",
+  img: "assets/Icon/ekskul/hisstkj.jpg",
+  deskripsi:
+      "HISS TKJ adalah himpunan siswa-siswi TKJ yang belajar dan berkembang bersama dalam dunia IT, mulai dari jaringan, perakitan komputer, pemrograman, hingga penginstalan.",
+    id: "hiss-tkj",
+},
+{
+  icon: "fa-tools",
+  label: "HISS TSM",
+  tagline: "MESIN MESIN MESIN!!",
+  img: "assets/Icon/ekskul/hisstsm.jpg",
+  deskripsi:
+    "HISS TSM merupakan wadah bagi siswa-siswi TSM yang ingin mendalami dunia mesin. Di sini kita belajar teknik otomotif, membongkar dan merakit motor, merakit kendaraan, menganalisis kerusakan, hingga merawat sistem mesin agar tetap optimal.",
+      id: "hiss-tsm",
+},
+
+{
+  icon: "fa-globe",
+  label: "English Club",
+  tagline: "Speak up your world",
+  img: "assets/Icon/ekskul/englishclub.jpg",
+  deskripsi:
+  "Ruang berkumpulnya siswa yang pengen belajar English dari basic dengan cara santai. Di sini kita tumbuh bareng, latihan bareng, dan saling bantu biar makin percaya diri.",
+  id: "english",
+},
+{
+  icon: "fa-music",
+  label: "Seni Tari",
+  tagline: "Ekspresikan lewat gerak",
+  img: "assets/Icon/ekskul/senitari.jpg",
+  deskripsi:
+"Ekskul Seni Tari mengajak kamu mengenal budaya lewat gerakan yang indah dan ekspresif. Di sini kamu belajar teknik dasar tari tradisional hingga modern, melatih keluwesan, kekompakan, dan kepercayaan diri. Setiap langkah adalah cerita, setiap gerakan adalah ekspresi.",
+  id: "senitari",
+  },
+{
+  icon: "fa-language",
+  label: "Japanese Club",
+  tagline: "語学と文化を楽しもう!",
+  img: "assets/Icon/ekskul/japanese.jpg",
+  deskripsi:
+  "Tempat buat kamu yang ingin masuk ke dunia Jepang! belajar bahasanya sedikit demi sedikit sambil mengenal budaya, sejarah, dan pop culture yang bikin Jepang unik.",
+  id: "japanese",
+},
+{
+  icon: "fa-fist-raised",
+  label: "Taekwondo",
+  tagline: "Tangguh secara fisik dan mental",
+  img: "assets/Icon/ekskul/taekwondo.jpg",
+  deskripsi:
+    "Kembangkan ketahanan fisik dan mental melalui seni bela diri Taekwondo. Belajar disiplin, teknik tendangan, serta ketangkasan yang membentuk karakter kuat.",
+  id: "taekwondo",
+},
+
+{
+  icon: "fa-volleyball-ball",
+  label: "Voli",
+  tagline: "Spike your limits",
+  img: "assets/Icon/ekskul/voli.jpg",
+deskripsi:
+  "Ekskul Voli adalah tempat kamu mengasah kerja sama tim, ketepatan, dan kekuatan. Di sini kita berlatih teknik dasar, strategi permainan, serta menjaga kekompakan untuk menghadapi berbagai pertandingan.",
+  id: "voli",
+},
+{
+  icon: "fa-futbol",
+  label: "Futsal",
+  tagline: "Kompak, cepat, dan taktis",
+  img: "assets/Icon/ekskul/futsal.jpg",
+  deskripsi:
+  "Ekskul Futsal cocok buat kamu yang suka permainan cepat dan penuh strategi. Latihan fokus pada kontrol bola, kerja sama tim, dan ketangkasan dalam menghadapi pertandingan intens di lapangan kecil.",
+  id: "futsal",
+},
+
+  {
+  icon: "fa-heart",
+  label: "PMR",
+  tagline: "Siap menolong kapan pun",
+  img: "assets/Icon/ekskul/pmr.jpg",
+  deskripsi:
+  "PMR adalah ruang belajar bagi siswa yang ingin peduli dan siap membantu. Di sini kamu mempelajari pertolongan pertama, kesehatan remaja, hingga kesiapsiagaan dalam situasi darurat.",
+ id: "pmr",
+},
+{
+  icon: "fa-flag",
+  label: "Paskibra",
+  tagline: "Disiplin. Tangguh. Berwibawa.",
+  img: "assets/Icon/ekskul/paskibra.jpg",
+  deskripsi:
+  "Paskibra adalah wadah bagi siswa yang ingin membentuk karakter disiplin dan tangguh. Di sini kamu berlatih baris-berbaris, kekompakan, serta sikap percaya diri sebagai pengibar bendera sekolah.",
+ id: "paskibra",
+  },
+{
+  icon: "fa-campground",
+  label: "Pramuka",
+  tagline: "Bersatu, siap sedia!",
+  img: "assets/Icon/ekskul/pramuka.jpg",
+  deskripsi:
+  "Pramuka mengajak kamu belajar lewat kegiatan seru seperti penjelajahan, keterampilan survival, kerja sama tim, hingga kepemimpinan. Tempat yang pas untuk tumbuh mandiri dan siap menghadapi tantangan.",
+ id: "pramuka",
+},
+{
+  icon: "fa-table-tennis-paddle-ball",
+  label: "Bulu Tangkis",
+  tagline: "semangat sportivitas",
+  img: "assets/Icon/ekskul/bulutangkis.jpg",
+  deskripsi:
+    "Ekstrakurikuler Bulu Tangkis melatih ketangkasan, kecepatan, dan kerja sama tim. Siswa diajarkan teknik dasar hingga strategi permainan untuk berprestasi di berbagai turnamen.",
+  id: "bulutangkis",
+},
+
+];
+
+// From menuData.ts
+export type MenuItem = {
+  title: string;
+  desc: string;
+  svgPath?: string;
+};
+
+export const menuData: Record<string, MenuItem[]> = {
+    akademik: [
+      {
+        title: "Kurikulum",
+        desc: "Jelajahi metode pembelajaran.",
+        svgPath: `<path d="M20.4121 9.00861V9.90861V9.00861ZM23.8332 5.58756L24.7332 5.58756L23.8332 5.58756ZM20.4121 2.1665V1.2665V2.1665ZM16.9911 5.58756H16.0911H16.9911ZM12.9998 4.20685C13.4969 4.20685 13.8998 3.80391 13.8998 3.30685C13.8998 2.8098 13.4969 2.40685 12.9998 2.40685V4.20685ZM23.5928 13.57C23.5928 13.073 23.1899 12.67 22.6928 12.67C22.1958 12.67 21.7928 13.073 21.7928 13.57H23.5928ZM7.58317 13.1832C7.08611 13.1832 6.68317 13.5861 6.68317 14.0832C6.68317 14.5802 7.08611 14.9832 7.58317 14.9832V13.1832ZM12.9998 14.9832C13.4969 14.9832 13.8998 14.5802 13.8998 14.0832C13.8998 13.5861 13.4969 13.1832 12.9998 13.1832V14.9832ZM7.58317 17.5165C7.08611 17.5165 6.68317 17.9194 6.68317 18.4165C6.68317 18.9136 7.08611 19.3165 7.58317 19.3165L7.58317 17.5165ZM17.3332 19.3165C17.8302 19.3165 18.2332 18.9136 18.2332 18.4165C18.2332 17.9194 17.8302 17.5165 17.3332 17.5165L17.3332 19.3165ZM20.4121 9.90861C21.5581 9.90861 22.6572 9.45336 23.4676 8.643L22.1948 7.37021C21.722 7.843 21.0807 8.10861 20.4121 8.10861V9.90861ZM23.4676 8.643C24.2779 7.83265 24.7332 6.73357 24.7332 5.58756L22.9332 5.58756C22.9332 6.25618 22.6676 6.89742 22.1948 7.37021L23.4676 8.643ZM24.7332 5.58756C24.7332 4.44154 24.2779 3.34246 23.4676 2.53211L22.1948 3.8049C22.6676 4.27769 22.9332 4.91893 22.9332 5.58756L24.7332 5.58756ZM23.4676 2.53211C22.6572 1.72176 21.5581 1.2665 20.4121 1.2665V3.0665C21.0807 3.0665 21.722 3.33211 22.1948 3.8049L23.4676 2.53211ZM20.4121 1.2665C19.2661 1.2665 18.167 1.72176 17.3567 2.53211L18.6295 3.8049C19.1023 3.33211 19.7435 3.0665 20.4121 3.0665V1.2665ZM17.3567 2.53211C16.5463 3.34247 16.0911 4.44154 16.0911 5.58756L17.8911 5.58756C17.8911 4.91893 18.1567 4.27769 18.6295 3.8049L17.3567 2.53211ZM16.0911 5.58756C16.0911 6.73357 16.5463 7.83265 17.3567 8.643L18.6295 7.37021C18.1567 6.89742 17.8911 6.25618 17.8911 5.58756H16.0911ZM17.3567 8.643C18.167 9.45336 19.2661 9.90861 20.4121 9.90861V8.10861C19.7435 8.10861 19.1023 7.843 18.6295 7.37021L17.3567 8.643ZM12.9998 2.40685H7.58317V4.20685H12.9998V2.40685ZM1.2665 8.72352V18.4165H3.0665V8.72352H1.2665ZM7.58317 24.7332H17.2762V22.9332H7.58317V24.7332ZM23.5928 18.4165V13.57H21.7928V18.4165H23.5928ZM17.2762 24.7332C20.7648 24.7332 23.5928 21.9051 23.5928 18.4165H21.7928C21.7928 20.911 19.7706 22.9332 17.2762 22.9332V24.7332ZM1.2665 18.4165C1.2665 21.9051 4.09457 24.7332 7.58317 24.7332V22.9332C5.08868 22.9332 3.0665 20.911 3.0665 18.4165H1.2665ZM7.58317 2.40685C4.09457 2.40685 1.2665 5.23492 1.2665 8.72352H3.0665C3.0665 6.22904 5.08868 4.20685 7.58317 4.20685V2.40685ZM7.58317 14.9832H12.9998V13.1832H7.58317V14.9832ZM7.58317 19.3165L17.3332 19.3165L17.3332 17.5165L7.58317 17.5165L7.58317 19.3165Z" fill="#F59E0B"></pathd=>`
+      },
+      {
+        title: "Data Guru/Pengajar",
+        desc: "Kenali tenaga pengajar kami lebih dekat.",
+        svgPath: `<path d="M7.58356 19.6624V17.4199M13.1303 19.6621V15.1771M18.6771 19.6625V12.9242M17.8752 7.0415C15.1127 10.2698 11.7111 12.4366 7.58356 13.4658M15.1669 6.49984H16.4169C17.3597 6.49984 17.8311 6.49984 18.124 6.79273C18.4169 7.08562 18.4169 7.55703 18.4169 8.49984V9.74984M10.167 2.1665H15.8336C19.6048 2.1665 21.4904 2.1665 22.662 3.33808C23.8336 4.50965 23.8336 6.39527 23.8336 10.1665L23.8336 15.8332C23.8336 19.6044 23.8336 21.49 22.662 22.6616C21.4904 23.8332 19.6048 23.8332 15.8336 23.8332L10.167 23.8332C6.39577 23.8332 4.51016 23.8332 3.33858 22.6616C2.16701 21.49 2.16701 19.6044 2.16701 15.8332L2.167 10.1665C2.167 6.39527 2.16699 4.50965 3.33857 3.33808C4.51014 2.1665 6.39576 2.1665 10.167 2.1665Z" stroke="#10B981" stroke-width="1.8" stroke-linecap="round"></path>`
+      },
+      {
+        title: "E-Learning/E-Book",
+        desc: "Belajar dan baca materi digital sekolah.",
+        svgPath: `<path d="M16.239 18.9582H17.8748C21.1465 18.9582 23.8332 16.2823 23.8332 12.9998C23.8332 9.72817 21.1573 7.0415 17.8748 7.0415H16.239M9.74984 7.0415H8.12484C4.84234 7.0415 2.1665 9.71734 2.1665 12.9998C2.1665 16.2715 4.84234 18.9582 8.12484 18.9582H9.74984M8.6665 12.9998H17.3332" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></pathd=>`
+      },
+      {
+        title: "Kalender Akademik",
+        desc: "Lihat jadwal agenda akademik sekolah.",
+        svgPath:` <path d="M16.239 18.9582H17.8748C21.1465 18.9582 23.8332 16.2823 23.8332 12.9998C23.8332 9.72817 21.1573 7.0415 17.8748 7.0415H16.239M9.74984 7.0415H8.12484C4.84234 7.0415 2.1665 9.71734 2.1665 12.9998C2.1665 16.2715 4.84234 18.9582 8.12484 18.9582H9.74984M8.6665 12.9998H17.3332" stroke="#3B82F6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></pathd=>`
+      },
+    ],
+  berita: [
+    {
+      title: "Artikel Sekolah",
+      desc: "Baca info dan wawasan baru.",
+      svgPath:`<path d="M12.4583 13.7427C13.9541 13.7427 15.1667 12.5301 15.1667 11.0343C15.1667 9.53856 13.9541 8.32599 12.4583 8.32599C10.9626 8.32599 9.75 9.53856 9.75 11.0343C9.75 12.5301 10.9626 13.7427 12.4583 13.7427ZM12.4583 13.7427V18.076M3.25 11.4628V13.2029C3.25 15.3284 3.25 16.3912 3.70714 17.3059C4.16428 18.2205 5.01425 18.8585 6.7142 20.1344L7.42948 20.6713C9.93426 22.5512 11.1866 23.4912 12.6319 23.4912C14.0772 23.4912 15.3296 22.5512 17.8344 20.6713L18.5497 20.1344C20.2496 18.8585 21.0996 18.2205 21.5567 17.3059C22.0139 16.3912 22.0139 15.3284 22.0139 13.2029V11.4628C22.0139 8.63125 22.0139 7.2155 21.2732 6.11722C20.5325 5.01895 19.2199 4.48846 16.5946 3.42749L15.8794 3.13842C14.2761 2.49048 13.4745 2.1665 12.6319 2.1665C11.7894 2.1665 10.9878 2.49048 9.38453 3.13842L8.66925 3.4275C6.04404 4.48846 4.73143 5.01895 3.99071 6.11722C3.25 7.2155 3.25 8.63125 3.25 11.4628Z" stroke="#F43F5E" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>`
+    },
+     {
+      title: "Forum/Blog",
+      desc: "Diskusi dan berbagi ide.",
+      svgPath: `<path d="M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H7.25C5.36438 2.1665 4.42157 2.1665 3.83579 2.75229C3.25 3.33808 3.25 4.28089 3.25 6.1665V21.6665C3.25 22.8631 4.22005 23.8332 5.41667 23.8332H18.0278C19.9134 23.8332 20.8562 23.8332 21.442 23.2474C22.0278 22.6616 22.0278 21.7188 22.0278 19.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"></path>`
+    },
+     {
+      title: "Event/Kegiatan",
+      desc: "Lihat agenda terbaru sekolah.",
+      svgPath: `<path d="M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H7.25C5.36438 2.1665 4.42157 2.1665 3.83579 2.75229C3.25 3.33808 3.25 4.28089 3.25 6.1665V21.6665C3.25 22.8631 4.22005 23.8332 5.41667 23.8332H18.0278C19.9134 23.8332 20.8562 23.8332 21.442 23.2474C22.0278 22.6616 22.0278 21.7188 22.0278 19.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"></path>`
+    },
+     {
+      title: "Cek Alumni",
+      desc: "Temukan dan hubungi para alumni.",
+      svgPath: `<path d="M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H7.25C5.36438 2.1665 4.42157 2.1665 3.83579 2.75229C3.25 3.33808 3.25 4.28089 3.25 6.1665V21.6665C3.25 22.8631 4.22005 23.8332 5.41667 23.8332H18.0278C19.9134 23.8332 20.8562 23.8332 21.442 23.2474C22.0278 22.6616 22.0278 21.7188 22.0278 19.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"></path>`
+    }
+  ],
+  jurnal: [
+    {
+      title: "Prestasi",
+      desc: "Lihat capaian siswa dan sekolah.",
+      svgPath: `<path d="M20.4121 9.00861V9.90861V9.00861ZM23.8332 5.58756L24.7332 5.58756L23.8332 5.58756ZM20.4121 2.1665V1.2665V2.1665ZM16.9911 5.58756H16.0911H16.9911ZM12.9998 4.20685C13.4969 4.20685 13.8998 3.80391 13.8998 3.30685C13.8998 2.8098 13.4969 2.40685 12.9998 2.40685V4.20685ZM23.5928 13.57C23.5928 13.073 23.1899 12.67 22.6928 12.67C22.1958 12.67 21.7928 13.073 21.7928 13.57H23.5928ZM7.58317 13.1832C7.08611 13.1832 6.68317 13.5861 6.68317 14.0832C6.68317 14.5802 7.08611 14.9832 7.58317 14.9832V13.1832ZM12.9998 14.9832C13.4969 14.9832 13.8998 14.5802 13.8998 14.0832C13.8998 13.5861 13.4969 13.1832 12.9998 13.1832V14.9832ZM7.58317 17.5165C7.08611 17.5165 6.68317 17.9194 6.68317 18.4165C6.68317 18.9136 7.08611 19.3165 7.58317 19.3165L7.58317 17.5165ZM17.3332 19.3165C17.8302 19.3165 18.2332 18.9136 18.2332 18.4165C18.2332 17.9194 17.8302 17.5165 17.3332 17.5165L17.3332 19.3165ZM20.4121 9.90861C21.5581 9.90861 22.6572 9.45336 23.4676 8.643L22.1948 7.37021C21.722 7.843 21.0807 8.10861 20.4121 8.10861V9.90861ZM23.4676 8.643C24.2779 7.83265 24.7332 6.73357 24.7332 5.58756L22.9332 5.58756C22.9332 6.25618 22.6676 6.89742 22.1948 7.37021L23.4676 8.643ZM24.7332 5.58756C24.7332 4.44154 24.2779 3.34246 23.4676 2.53211L22.1948 3.8049C22.6676 4.27769 22.9332 4.91893 22.9332 5.58756L24.7332 5.58756ZM23.4676 2.53211C22.6572 1.72176 21.5581 1.2665 20.4121 1.2665V3.0665C21.0807 3.0665 21.722 3.33211 22.1948 3.8049L23.4676 2.53211ZM20.4121 1.2665C19.2661 1.2665 18.167 1.72176 17.3567 2.53211L18.6295 3.8049C19.1023 3.33211 19.7435 3.0665 20.4121 3.0665V1.2665ZM17.3567 2.53211C16.5463 3.34247 16.0911 4.44154 16.0911 5.58756L17.8911 5.58756C17.8911 4.91893 18.1567 4.27769 18.6295 3.8049L17.3567 2.53211ZM16.0911 5.58756C16.0911 6.73357 16.5463 7.83265 17.3567 8.643L18.6295 7.37021C18.1567 6.89742 17.8911 6.25618 17.8911 5.58756H16.0911ZM17.3567 8.643C18.167 9.45336 19.2661 9.90861 20.4121 9.90861V8.10861C19.7435 8.10861 19.1023 7.843 18.6295 7.37021L17.3567 8.643ZM12.9998 2.40685H7.58317V4.20685H12.9998V2.40685ZM1.2665 8.72352V18.4165H3.0665V8.72352H1.2665ZM7.58317 24.7332H17.2762V22.9332H7.58317V24.7332ZM23.5928 18.4165V13.57H21.7928V18.4165H23.5928ZM17.2762 24.7332C20.7648 24.7332 23.5928 21.9051 23.5928 18.4165H21.7928C21.7928 20.911 19.7706 22.9332 17.2762 22.9332V24.7332ZM1.2665 18.4165C1.2665 21.9051 4.09457 24.7332 7.58317 24.7332V22.9332C5.08868 22.9332 3.0665 20.911 3.0665 18.4165H1.2665ZM7.58317 2.40685C4.09457 2.40685 1.2665 5.23492 1.2665 8.72352H3.0665C3.0665 6.22904 5.08868 4.20685 7.58317 4.20685V2.40685ZM7.58317 14.9832H12.9998V13.1832H7.58317V14.9832ZM7.58317 19.3165L17.3332 19.3165L17.3332 17.5165L7.58317 17.5165L7.58317 19.3165Z" fill="#F59E0B"></pathd=>`
+    },
+     {
+      title: "Project Kelas",
+      desc: "Eksplor proyek dan tugas tim.",
+      svgPath: `<path d="M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H7.25C5.36438 2.1665 4.42157 2.1665 3.83579 2.75229C3.25 3.33808 3.25 4.28089 3.25 6.1665V21.6665C3.25 22.8631 4.22005 23.8332 5.41667 23.8332H18.0278C19.9134 23.8332 20.8562 23.8332 21.442 23.2474C22.0278 22.6616 22.0278 21.7188 22.0278 19.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"></path>`
+    },
+     {
+      title: "Hasil Karya Siswa",
+      desc: "Lihat karya kreatif siswa.",
+      svgPath: `<path d="M6.5 14.0832H15.1667M6.5 17.3332H10.8333M14.8049 2.52753V7.22197C14.8049 8.41859 15.7749 9.38864 16.9715 9.38864H21.666M13.9081 2.1665H7.25C5.36438 2.1665 4.42157 2.1665 3.83579 2.75229C3.25 3.33808 3.25 4.28089 3.25 6.1665V21.6665C3.25 22.8631 4.22005 23.8332 5.41667 23.8332H18.0278C19.9134 23.8332 20.8562 23.8332 21.442 23.2474C22.0278 22.6616 22.0278 21.7188 22.0278 19.8332V10.2862C22.0278 9.71155 21.7995 9.16045 21.3932 8.75412L15.4402 2.80111C15.0338 2.39478 14.4827 2.1665 13.9081 2.1665Z" stroke="#4F46E5" stroke-width="1.8" stroke-linecap="round"></path>`
+    }
+  ]
+};
+ 
+
+// From newsData.ts
+export interface NewsItem {
+  image: string;
+  tag: string; // e.g. "Latest" | "Announcement" | "Event"
+  date: string; // ISO date (yyyy-mm-dd)
+  title: string;
+  excerpt: string;
+  link: string;
+}
+
+export const tagColorMap: Record<string, { bg: string; text: string; cta: string }> = {
+  Latest: { bg: "bg-blue-100", text: "text-blue-800", cta: "text-blue-600" },
+  Announcement: { bg: "bg-yellow-100", text: "text-yellow-800", cta: "text-yellow-600" },
+  Event: { bg: "bg-purple-100", text: "text-purple-800", cta: "text-purple-600" },
+};
+
+export const newsData: NewsItem[] = [
+  {
+    image: "https://placehold.co/600x400",
+    tag: "Latest",
+    date: "2025-07-12",
+    title: "blub blub blub",
+    excerpt: "blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub",
+    link: "#",
+  },
+  {
+    image: "https://placehold.co/600x400",
+    tag: "Announcement",
+    date: "2025-06-30",
+    title: "blub blub blub",
+    excerpt: "blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub",
+    link: "#",
+  },
+  {
+    image: "https://placehold.co/600x400",
+    tag: "Event",
+    date: "2025-06-20",
+    title: "blub blub blub",
+    excerpt: "blub blub blub blub blub blub blub blub blub blub blub blub blub blub blub",
+    link: "#",
+  },
+];
+ 
+// From ruanganData.ts
+export interface RuanganItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  span?: string; // Untuk layout desktop
+}
+
+export const ruanganData: RuanganItem[] = [
+  {
+    id: "labkom",
+    title: "Laboratorium Komputer",
+    description: "Berikan pengalaman nyata pada siswa dengan pembelajaran secara langsung.",
+    image: "/assets/ROOM/Labkom.jpg",
+    span: "col-span-4 row-span-2",
+  },
+  {
+    id: "labjaringan",
+    title: "Laboratorium Jaringan & IT",
+    description: "Lakukan uji coba dan eksperimen pada perangkat secara nyata.",
+    image: "/assets/ROOM/Labjaringan.jpg",
+    span: "col-span-2",
+  },
+  {
+    id: "labperakitan",
+    title: "Lab Perakitan PC & Hardware",
+    description: "Asah kemampuan peserta didik dengan perangkat keras.",
+    image: "/assets/ROOM/Labperakitan-transformed.jpeg",
+    span: "col-span-2",
+  },
+  {
+    id: "perpustakaan",
+    title: "Perpustakaan & Study Lounge",
+    description: "Beri ruang pada jiwa dengan membaca ayat-ayat kiri kami.",
+    image: "/assets/ROOM/Perpustakaan-transformed.jpeg",
+    span: "col-span-2",
+  },
+  {
+    id: "bengkel",
+    title: "Bengkel Teknik & Elektrik",
+    description: "Kenali dan perbaiki komponen pada mesin.",
+    image: "/assets/ROOM/Bengkel-transformed.jpeg",
+    span: "col-span-4 row-span-2",
+  },
+  {
+    id: "lapangan",
+    title: "Lapangan Serbaguna & Outdoor",
+    description: "Latih ketangkasan dengan lapangan serbaguna.",
+    image: "/assets/ROOM/Lapangan-transformed.jpeg",
+    span: "col-span-2",
+  },
+];
+
+// From spmbData.ts
+export type SPMBCard = {
+  id: string;
+  title: string;
+  dateRange: string;
+  description: string;
+  discountLabel?: string;
+  discountPercent?: string;
+  ctaText: string;
+};
+
+export type SPMBFacilities = {
+  title: string;
+  columns: string[][];
+};
+
+export type SPMBData = {
+  header: {
+    image: string;
+    title: string;
+    subtitle: string;
+    buttonText: string;
+    arrowIcon?: string; // optional svg path or name
+  };
+  intro: {
+    title: string;
+    description: string;
+  };
+  cards: SPMBCard[];
+  facilities: SPMBFacilities;
+};
+
+export const spmbData: SPMBData = {
+  header: {
+    image: "/assets/bg/1.webp",
+    title: "SPMB",
+    subtitle: "Sistem Penerimaan Murid Baru\ntahun ajaran 2025/2026",
+    buttonText: "Join To Us",
+  },
+  intro: {
+    title: "Biaya Terjangkau, Fasilitas Maksimal",
+    description:
+      "Kami menyediakan pilihan pendaftaran dengan harga terjangkau untuk semua kalangan. Dapatkan fasilitas terbaik, proses mudah, dan transparansi biaya tanpa ribet.",
+  },
+  cards: [
+    {
+      id: "gelombang1",
+      title: "Gelombang I",
+      dateRange: "Buka pendaftaran 1 Maret – 30 April 2026",
+      description:
+        "Khusus pendaftar awal akan mendapatkan potongan biaya masuk hingga:",
+      discountLabel: "DSG",
+      discountPercent: "50%",
+      ctaText: "Daftar Sekarang",
+    },
+    {
+      id: "gelombang2",
+      title: "Gelombang II",
+      dateRange: "Buka pendaftaran 1 Mei – 30 Juni 2026",
+      description:
+        "Khusus pendaftar awal akan mendapatkan potongan biaya masuk hingga:",
+      discountLabel: "DSG",
+      discountPercent: "25%",
+      ctaText: "Daftar Sekarang",
+    },
+  ],
+  facilities: {
+    title: "FASILITAS & KEUNGGULAN",
+    columns: [
+      [
+        "Praktik langsung di lab komputer dan bengkel teknik lengkap",
+        "Program magang industri di perusahaan nasional dan lokal",
+        "Sertifikasi kompetensi & pelatihan wirausaha",
+        "Kegiatan ekstrakurikuler produktif & kompetitif",
+      ],
+      [
+        "BEBAS UANG PRAKTEK 1 TAHUN",
+        "Sekolah pagi hari (jam 6.30 – 2.00 WIB)",
+        "Belajar Senin – Jumat, Sabtu libur",
+        "DLL",
+      ],
+    ],
+  },
+};
+
+// From videoData.ts
+export type VideoText = {
+  title: string;
+  subtitle: string;
+  position: 'center' | 'left-top' | 'left-bottom';
+};
+
+export const videoData = {
+  src: '/assets/Video/videosection.mp4',
+  texts: [
+    {
+      title: 'Cerita Dimulai dari Sini',
+      subtitle:
+        'Satu kilasan atmosfer, semangat, dan ruang tempat para pembelajar masa depan tumbuh.',
+      position: 'center',
+    },
+    {
+      title: 'Ruang yang Menyalakan Potensi',
+      subtitle: 'Teknologi, kreativitas, dan semangat muda berpadu jadi satu.',
+      position: 'left-top',
+    },
+    {
+      title: 'Belajar, Tumbuh, Beraksi',
+      subtitle: 'Tempat ide berkembang dan mimpi dilatih jadi aksi nyata.',
+      position: 'left-bottom',
+    },
+    {
+      title: 'Lebih dari Sekadar Sekolah',
+      subtitle: 'Di sini, pengalaman jadi pelajaran — dan pelajaran jadi kekuatan.',
+      position: 'center',
+    },
+  ] as VideoText[],
+};
