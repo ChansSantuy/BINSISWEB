@@ -5,6 +5,7 @@ import App from './App.tsx'
 import 'aos/dist/aos.css'
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import AOS from 'aos'
+import { injectSpeedInsights } from '@vercel/speed-insights'
 
 // Initialize AOS
 AOS.init({
@@ -13,6 +14,9 @@ AOS.init({
   once: true,
   mirror: false,
 })
+
+// Initialize Vercel Speed Insights
+injectSpeedInsights()
 
 // main.tsx
 
